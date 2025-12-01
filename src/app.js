@@ -8,6 +8,14 @@ app.use(cors({
     credentials: true,
 }))
 
+//import router
+import router from './routes/user.routes.js';
+import { registerUser } from './controllers/user.controller';
+
+
+//routes declaration
+app.use("/api/v1/users", userRouter)
+
 
 
 app.use(express.json({limit:"16kb"}))
