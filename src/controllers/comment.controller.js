@@ -6,6 +6,7 @@ import {asyncHandler} from "../utils/asyncHandler.js"
 import { Video} from "../models/video.model.js"
 import { populate } from "dotenv"
 
+//aama bija ae aeggrigation pipeline use kari che ane aaode nai kari to ek var aeno code joi levo
 const getVideoComments = asyncHandler(async (req, res) => {
     //TODO: get all comments for a video
     const {videoId} = req.params
